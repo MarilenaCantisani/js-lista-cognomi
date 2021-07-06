@@ -6,7 +6,25 @@
 4. scrivi anche la posizione "umana" (partendo da 1) della lista
 in cui il nuovo utente si trova */
 
-var lastNames = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"]
+var lastNames = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
+console.log(lastNames);
 
 var userLastName = prompt("Inserisci qui il tuo cognome: ");
-console.log(lastName);
+console.log(userLastName);
+
+lastNames.push(userLastName);
+lastNames.sort();
+
+console.log(lastNames);
+
+
+
+
+
+
+
+
+
+
+
+
