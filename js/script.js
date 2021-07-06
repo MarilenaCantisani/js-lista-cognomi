@@ -29,7 +29,6 @@ while (i < lastNames.length) {
     i++;
 }
 
-
 console.log(listItems);
 listLastNames.innerHTML = listItems;
 
