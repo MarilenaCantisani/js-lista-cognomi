@@ -15,7 +15,7 @@ console.log(userLastName);
 lastNames.push(userLastName);
 lastNames.sort();
 var position = lastNames.indexOf(userLastName);
-console.log(position);
+console.log(position + 1);
 
 
 console.log(lastNames);
@@ -23,7 +23,7 @@ console.log(lastNames);
 var listLastNames = document.getElementById("list");
 var listItems = "";
 
-var i = 1;
+var i = 0;
 while (i < lastNames.length) {
     listItems += "<li>" + lastNames[i] + "</li>";
     i++;
@@ -33,7 +33,8 @@ while (i < lastNames.length) {
 console.log(listItems);
 listLastNames.innerHTML = listItems;
 
-
+var userLastNamePosition = document.getElementById("position-element");
+userLastNamePosition.innerHTML = "La posizione del tuo cognome è: " + (position + 1);
 
 
 
