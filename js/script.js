@@ -9,22 +9,26 @@ in cui il nuovo utente si trova */
 var lastNames = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
 console.log(lastNames);
 
-var userLastName = prompt("Inserisci qui il tuo cognome: ", "Aita");
+var userLastName = prompt("Inserisci qui il tuo cognome: ", "Allen");
 console.log(userLastName);
 
 lastNames.push(userLastName);
 lastNames.sort();
+var position = lastNames.indexOf(userLastName);
+console.log(position);
+
 
 console.log(lastNames);
 
 var listLastNames = document.getElementById("list");
 var listItems = "";
 
-var i = 0;
+var i = 1;
 while (i < lastNames.length) {
     listItems += "<li>" + lastNames[i] + "</li>";
     i++;
 }
+
 
 console.log(listItems);
 listLastNames.innerHTML = listItems;
