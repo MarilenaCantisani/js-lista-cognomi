@@ -17,7 +17,17 @@ lastNames.sort();
 
 console.log(lastNames);
 
+var elementList = document.getElementById("listLastNames");
+var listItems = "";
 
+var i = 0;
+while (i < lastNames.length) {
+    listItems += "<li>" + lastNames[i] + "</li>";
+    i++
+}
+
+console.log(listItems);
+elementList.innerHTML = listItems;
 
 
 
